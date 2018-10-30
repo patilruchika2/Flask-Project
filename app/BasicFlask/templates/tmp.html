@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+<h1>Flask project</h1>
+<h2>{{name1}}</h2>
+<h2>{{list1[1]}}</h2>
+<h2>{{tup1[1]}} says: {{line1}}</h2>
+<h2>{{dictt1["Name"]}} says : attended {{name1}}</h2>
+
+
+<h1>{{dictt1["Name"]}}   {{Nlist1[1]}}
+</h1>
+
+<table border=1>
+{% for key,value in dictt1.items() %}
+<tr>
+<th>{{key}}</th>
+<td>{{value}}</td>
+</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
